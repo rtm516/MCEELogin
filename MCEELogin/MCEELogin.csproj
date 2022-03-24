@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <Copyright>Ryan Milner © 2022</Copyright>
+    <PackageProjectUrl>https://github.com/rtm516/MCEELogin</PackageProjectUrl>
+    <Description>A proxy to patch the requests on old MCEE versions when trying to login.</Description>
+    <Company>rtm516</Company>
+    <Authors>Ryan Milner</Authors>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/rtm516/MCEELogin</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Titanium.Web.Proxy" Version="3.1.1397" />
+  </ItemGroup>
+
+</Project>
